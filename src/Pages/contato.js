@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Grid, Button, TextField } from '@material-ui/core/';
 
+
+
 const Contatos = () => {
 
     const url = 'http://localhost:5000/message'
@@ -26,7 +28,7 @@ const Contatos = () => {
             email: author,
             message: content,
         }
-
+        
         fetch(url, {
             method: "POST",
             headers: {
